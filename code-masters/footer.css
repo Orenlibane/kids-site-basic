@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'montserrat-regualr';
+    src: url('fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+html {
+    font-size: 14px;
+    font-family: montserrat-regualr, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fefefe;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.layout {
+    padding-left: 346px;
+    padding-right: 346px;
+}
+
+.footer-main-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: #fefefe;
+    color: #464855;
+}
+
+footer h4 {
+    color: #464855;
+}
+
+footer a {
+    color: #ff4961;
+    font-family: montserrat-bold, sans-serif;
+}
+
+footer .footer-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item * {
+    margin-bottom: 5px;
+}
+
+.footer-item h4 {
+    padding-bottom: 28px;
+}
+
+.footer-sub-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-buttons i {
+    width: 25px;
+    height: 25px;
+}
+
+.social-buttons a i {
+    color: black;
+}
+
+.social-buttons a i:hover {
+    color: blue;
+}
+
+.footer-copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-item-1 {
+    margin-right: 15px;
+}
+
+.footer-item-1 p {
+    margin-bottom: 10px;
+}
+
+.footer-item-2 {}
+
+.footer-item-3 p {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+    .layout {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer-main-container {
+        flex-direction: column;
+    }
+    .footer-sub-container {
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    footer .footer-item {
+        margin-bottom: 15px;
+    }
+    .footer-item h4 {
+        padding-bottom: 0;
+    }
+}

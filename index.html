@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-150226496-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150226496-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="fav-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yoga-Now</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="nav-container">
+        <div class="nav-bar">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+        <div class="logo-container">
+          <img src="yoga/logo.png" alt="" />
+          YOGA NOW
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#goal">Our Goal</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="title-container">
+        <h1>Yoga Now</h1>
+        <p>Yoga and Meditation in the heart of Tel-aviv</p>
+      </div>
+    </div>
+    <div class="middle-container">
+      <div class="about-container layout">
+        <h1 id="goal">Our Goal</h1>
+        <p>
+          Creating a sincere desire to learn and openness to yogic techniques.
+          giving basic knowledge of yoga postures and philosophy. during the
+          course Students will develop the skills to teach yoga asanas and
+          improve their own personal practice.
+        </p>
+      </div>
+
+      <div class="layout menu-container">
+        <div class="images">
+          <div class="card">
+            <img src="yoga/yoga1.jpg" alt="" />
+            <div class="card-text">
+              <h4>Practice yoga in the desert</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img src="yoga/yoga2.jpg" alt="" />
+            <div class="card-text">
+              <h4>Our daily beach yoga</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img src="yoga/yoga3.jpg" alt="" />
+            <div class="card-text">
+              <h4>Medidation is the key</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img src="yoga/yoga4.jpg" alt="" />
+            <div class="card-text">
+              <h4>Practice yoga in pairs</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img src="yoga/yoga5.jpg" alt="" />
+            <div class="card-text">
+              <h4>Pushing you to the limits</h4>
+            </div>
+          </div>
+          <div class="card">
+            <img src="yoga/yoga6.jpg" alt="" />
+            <div class="card-text">
+              <h4>Yoga in our classroom</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-container layout">
+        <h1 id="about">About Us</h1>
+        <p>
+          The course is a unique opportunity to develop both a solid foundation
+          in classical yoga and balanced teaching methods in asanas and
+          pranayama. This integral course enables physical, mental, emotional
+          and spiritual growth.
+        </p>
+      </div>
+    </div>
+    <div class="layout form-container">
+      <h4>Stay Updated</h4>
+      <p>subscribe to stay inform of updates</p>
+      <form class="suscribe-input" name="myForm" onsubmit="onSubmitForm(event)">
+        <input type="text" name="fname" placeholder="First Name" required />
+        <input type="text" name="lname" placeholder="Last Name" required />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          pattern="[0-9]{3}[0-9]{7}"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="submit" value="Submit">Send</button>
+      </form>
+    </div>
+    <footer class="layout">
+      <div class="footer-main-container">
+        <div class="footer-sub-container">
+          <div class="footer-item footer-item-1 ">
+            <h4>Get in Touch</h4>
+            <div class="social-buttons">
+              <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+              <a href="#"> <i class="fab fa-twitter"></i> </a>
+              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+              <a href="#"> <i class="fab fa-whatsapp"></i> </a>
+              <a href="#"> <i class="fab fa-instagram"></i> </a>
+            </div>
+            <div><a href="#">YogaAreUs@gmail.com</a></div>
+          </div>
+          <div class="footer-item footer-item-2">
+            <h4>Our classes:</h4>
+            <div>
+              <div>Daily Class</div>
+              <div>Private Lessons</div>
+              <div>Yoga Tours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-copyrights">
+        <p>All rights Reserved 2019©</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/724b0b264a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

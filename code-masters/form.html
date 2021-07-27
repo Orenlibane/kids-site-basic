@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="fav-icon.png" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+        <div class="layout form-container">
+                <h4>Stay Updated</h4>
+                <p>subscribe to stay inform of updates</p>
+                <form class="suscribe-input" name="myForm" onsubmit="onSubmitForm(event)">
+                  <input type="text" name="fname" placeholder="First Name" required />
+                  <input type="text" name="lname" placeholder="Last Name" required />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    pattern="[0-9]{3}-[0-9]{7}"
+                    required
+                  />
+                  <input type="email" name="email" placeholder="Email" required />
+                  <button type="submit" value="Submit">Send</button>
+                </form>
+                <script
+                src="https://kit.fontawesome.com/724b0b264a.js"
+                crossorigin="anonymous"
+              ></script>
+              <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+              <script src="main.js"></script>
+  </body>
+</html>
