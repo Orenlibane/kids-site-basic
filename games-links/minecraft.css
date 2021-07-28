@@ -1,0 +1,45 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.minecraft-section {
+    height: 100%;
+    width: 100%;
+    background: url('../games/mine-craft-page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.minecraft-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: black 2px solid;
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.back-btn {
+    border-radius: 15px;
+    background: white;
+    color: black;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    padding:5px;
+    border: 1px black solid;
+}
