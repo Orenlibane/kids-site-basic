@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 .minecraft-section {
     height: 100%;
     width: 100%;
@@ -32,15 +33,36 @@ h1 {
 }
 
 .mindcraft-text2 {
-    border: 2px purple dotted;
+    /* border: 12px red dotted; */
     border-radius: 10px;
     background: teal;
     height: 150px;
     width: 50vw;
     margin: 20px auto;
     text-align: center;
-    
+    transition: 2s all;
+    animation: spin 5s;
 }
+
+/* .mindcraft-text2:hover {
+    background: red;
+} */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        background: yellow;
+    }
+    50% {
+        -webkit-transform: rotate(20deg);
+        background: purple;
+    }
+    100% {
+        -webkit-transform: rotate(-20deg);
+        background: red;
+    }
+}
+
 .back-btn {
     border-radius: 15px;
     background: white;
@@ -51,6 +73,6 @@ h1 {
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
-    padding:5px;
+    padding: 5px;
     border: 1px black solid;
 }

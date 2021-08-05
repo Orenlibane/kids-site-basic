@@ -25,18 +25,19 @@ body {
 }
 
 a {
-  color: plum;
+  color: yellowgreen;
   /* text-decoration: none; */
-  font-size: 15px;
+  font-size: 5px;
   font-weight: bold;
   text-align: right;
-  transition: all 2.4s;
+  transition: all 2.5s;
 }
 
 a:hover {
-  text-decoration: underline;
-  font-size: 30px;
-  color: red;
+  /* text-decoration: underline; */
+  /* padding: 1px; */
+  font-size: 25px;
+  color: blue;
 }
 
 .layout {
@@ -179,6 +180,7 @@ li {
   max-width: 280px;
   max-height: 350px;
   margin: 5px;
+  background: orangered;
 }
 
 .card-text {

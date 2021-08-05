@@ -19,19 +19,20 @@ function onSubmitForm(event) {
       firstName: fname,
       lastName: lname,
       phoneNumber: phone,
-      email: email
+      email: email,
     };
-    axios.post(baseURL + '/leads.json', data).then(res => {
-      console.log(res.data);
-      toggleModal();
-      document.body.style.cursor = 'default';
-    });
+    console.log('זה המידע שנשמר', data);
+    // axios.post(baseURL + '/leads.json', data).then(res => {
+    //   console.log(res.data);
+    //   toggleModal();
+    //   document.body.style.cursor = 'default';
+    // });
   }
 }
 
 function toggleModal() {
   var fields = ['fname', 'lname', 'phone', 'email'];
-  fields.forEach(field => {
+  fields.forEach((field) => {
     document.getElementsByName(field)[0].value = '';
   });
 
