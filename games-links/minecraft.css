@@ -41,7 +41,7 @@ h1 {
     margin: 20px auto;
     text-align: center;
     transition: 2s all;
-    animation: spin 5s;
+    animation: spin 10s infinite;
 }
 
 /* .mindcraft-text2:hover {
@@ -51,15 +51,15 @@ h1 {
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
-        background: yellow;
+        background: orange;
     }
     50% {
         -webkit-transform: rotate(20deg);
-        background: purple;
+        background: green;
     }
     100% {
         -webkit-transform: rotate(-20deg);
-        background: red;
+        background: yellow;
     }
 }
 

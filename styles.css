@@ -27,7 +27,7 @@ body {
 a {
   color: yellowgreen;
   /* text-decoration: none; */
-  font-size: 5px;
+  font-size: 15px;
   font-weight: bold;
   text-align: right;
   transition: all 2.5s;
@@ -37,7 +37,7 @@ a:hover {
   /* text-decoration: underline; */
   /* padding: 1px; */
   font-size: 25px;
-  color: blue;
+  color: red;
 }
 
 .layout {
@@ -49,6 +49,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.title-container h1 {
+  color: salmon;
+  font-weight: bold;
+  border: 4px dotted red;
 }
 
 .title-container p {
